@@ -15,9 +15,7 @@
 
 > I find what is broken in the data, quantify what it costs, and show teams how to fix it.
 
-Most of my analysis experience comes from a place where the numbers are not historic. I run daily operational reporting for a delivery station, so a figure I produce in the morning changes how the day gets run. That teaches you quickly which parts of an analysis matter and which parts are decoration.
-
-I bring the same standard to project work. Define the question before writing the query, validate every figure before presenting it, and be clear about what the data can and cannot tell you.
+My background is operational, so I approach analysis the way an operations team would: start with the metric, find the gap, work out what is driving it, then say what should change. My project work has covered a range of business problems, from sales and margin analysis to production efficiency and customer engagement. If the analysis does not lead to a decision, it is not finished.
 
 ---
 
