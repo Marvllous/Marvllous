@@ -1,7 +1,7 @@
 <h1 align="center">Marvellous Umeilechukwu</h1>
 
 <p align="center">
-  <strong>Data Analyst · Operations and Business Analytics</strong><br>
+  <strong>Data Analyst</strong><br>
   SQL · Power BI · Excel
 </p>
 
@@ -15,42 +15,32 @@
 
 > I find what is broken in the data, quantify what it costs, and show teams how to fix it.
 
-I work across logistics, manufacturing and media data. My background is operational, so I approach analysis the way an operations team would: start with the metric, find the gap, work out what is driving it, then say what should change. If the analysis does not lead to a decision, it is not finished.
+Three examples of what that means in practice:
+
+- Unpivoted 13 downtime factor columns into rows across 645 production batches to isolate what was actually causing delays. Result: 69% of downtime was systemic, not operator error, which moved the fix from performance management to maintenance scheduling.
+- Joined three unlinked tables on ID and rebuilt profit at line level, which showed the largest revenue category was one of the thinnest on margin while the smallest category held the highest-margin product in the range.
+- Built a weighted engagement score across 9 genres and 999 users, combining completion rate, repeat viewing and churn risk, to rank where content spend was returning and where it was not.
 
 ---
 
-## 🔎 How I Work
-
-Most analysis fails for one of two reasons. Either the question was never defined properly, or the answer never reached anyone who could act on it.
-
-I start with the business question in plain English before touching a query. What are we trying to find out, what data answers it, and what does the answer look like. Then I check every summary figure against a control total before I trust it, because a clean-looking dashboard built on an unvalidated join is worse than no dashboard.
-
-The output I care about is the decision, not the chart.
-
----
-
-## 🛠 Tools
+## 🛠 Tools and Techniques
 
 ![SQL](https://img.shields.io/badge/SQL-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
 ![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white)
 
-| Tool | What I use it for |
+| Technique | Where I have used it |
 |---|---|
-| **SQL** — SQL Server, PostgreSQL | Multi-table joins, CTEs, UNPIVOT, DATEDIFF, CASE logic, aggregation and comparison queries |
-| **Power BI** — Power Query, DAX, Power BI Service | Multi-page dashboards, data modelling, published reporting for stakeholders |
-| **Excel** | Cleaning and transformation, lookups, pivot analysis, weighted scoring models, dashboards with slicers |
-
----
-
-## 📊 What I Work On
-
-- Operational reporting and KPI tracking
-- Root cause analysis on performance gaps
-- Dashboard design for non-technical stakeholders
-- Data cleaning, transformation and multi-table joins
-- Translating business questions into measurable analysis
+| **CTEs** | Comparing scheduled against actual start times to surface data discrepancies before analysis |
+| **UNPIVOT** | Converting 13 wide downtime factor columns into a queryable row structure |
+| **DATEDIFF** | Calculating actual batch duration against planned duration to quantify delay |
+| **CASE logic** | Splitting downtime events into operator and non operator error for root cause attribution |
+| **Multi-table joins** | Linking products, batches, downtime events and factor definitions across four tables |
+| **Power Query and DAX** | Cleaning source data and building measures behind a three page Power BI dashboard |
+| **Excel lookups and pivots** | Merging customer, product and order tables on ID, then aggregating to category and channel level |
+| **Weighted scoring models** | Combining multiple engagement metrics into a single comparable genre ranking |
+| **Control total validation** | Checking every summary figure against a known total before publishing it |
 
 ---
 
@@ -64,56 +54,64 @@ The output I care about is the decision, not the chart.
 
 <br>
 
-### [Emerald Springs Bottling — Sales and Order Analysis](https://github.com/Marvllous/emerald-springs-sales-analysis)
+### [Emerald Springs Bottling, Sales and Order Analysis](https://github.com/Marvllous/emerald-springs-sales-analysis)
 `Excel`
 
-A beverage distributor could see revenue was healthy but not what was driving it. Three raw tables, inconsistent text fields, dates stored as serial numbers.
+**Problem:** A beverage distributor could see revenue but not what was driving it. Three unlinked tables, inconsistent text fields, dates stored as serial numbers.
 
-I cleaned and joined the data, then built profit at line level so every order carried its true margin. The finding that mattered: the biggest revenue category was one of the thinnest on profit, while the smallest category held the most profitable product in the entire range. Revenue rank and profit rank were telling different stories, and the business was resourced for revenue.
+**What I did:** Standardised text with TRIM, CLEAN and PROPER, converted serial dates, joined all three tables on Customer_ID and Product_ID, then built gross sales, cost, discount and profit at line level. Validated every total against a control figure.
+
+**What it showed:** 250 orders, €12,960.50 gross, 44.4% margin. One channel out-earned two others combined. The largest revenue category ranked near the bottom on profit per unit, while the smallest category contained the highest-margin product of all 20 in the range.
 
 <br>
 
-### GreenTech Manufacturing — Production Downtime Analysis
+### GreenTech Manufacturing, Production Downtime Analysis
 `SQL Server` `Power BI` · *repository in progress*
 
-An eco-products manufacturer losing an estimated $1.5M a year to unplanned downtime, with no visibility on where it came from.
+**Problem:** An eco-products manufacturer losing an estimated $1.5M a year to unplanned downtime, with no visibility on the cause.
 
-I analysed 645 production batches across four tables using CTEs, UNPIVOT and DATEDIFF, then built a three-page Power BI dashboard covering downtime factors, duration and operator scheduling. 56% of batches ran late and 21.74 days of production time was lost. The finding that changed the response: 69% of downtime was systemic rather than operator error. The fix belonged in maintenance scheduling and material availability, not performance management.
+**What I did:** Queried four tables in SQL Server. Used UNPIVOT to restructure 13 factor columns into rows, DATEDIFF to calculate actual against planned duration, CTEs to validate timestamp discrepancies, and CASE logic to separate operator from systemic causes. Built a three page Power BI dashboard covering downtime factors, duration analysis and operator scheduling.
+
+**What it showed:** 645 batches analysed, 56% delayed, 21.74 days of production time lost. 69% of downtime was systemic rather than human error. Cleaning and sanitation was the single largest cause at 86 occurrences, followed by raw material shortage at 77.
 
 <br>
 
-### StreamWave Entertainment — Viewer Engagement Analysis
+### StreamWave Entertainment, Viewer Engagement Analysis
 `Excel` · *repository in progress*
 
-A streaming platform spreading content investment across genres without data behind the decision.
+**Problem:** A streaming platform spreading content investment across genres without data behind the decision.
 
-I built a weighted engagement scoring system across 9 genres and 999 users, combining completion rate, repeat viewing and churn risk into a single ranking. Drama and Comedy led every metric. Two genres accounted for under 0.2% of engagement between them while still absorbing budget. The recommendation was to redirect spend and run retention campaigns during the months cancellations actually peaked.
+**What I did:** Imported four raw CSV files across seven sheets. Merged user and content data with VLOOKUP, calculated completion rate, repeat viewing and churn risk with statistical functions, then built a weighted scoring model to rank all 9 genres on a single scale. Delivered an interactive dashboard with genre and time slicers.
+
+**What it showed:** 999 users analysed. Drama and Comedy led every metric. Biography and Musical together accounted for under 0.2% of engagement while still absorbing budget. New subscriptions peaked June to July then declined, with cancellations rising over the same window.
 
 ---
 
-## 💼 Current Role
+## 💼 Experience
 
-**Logistics Operations Coordinator — JD.com**
+**Data Analytics Consultant, Amdari**
 
-I own the daily operational reporting for a delivery station: fulfilment rate, pickup rate, route efficiency and complaint data. The station holds a 99.6% fulfilment rate, top five in Europe, and a 100% pickup rate ranking first EU-wide.
+Project based analytics across multiple business contexts. Analysed large datasets, built interactive dashboards tracking KPIs including downtime rate, completion rate and engagement metrics, and delivered recommendations that supported process improvements. The projects above came from this work.
 
-I also ran root cause analysis on customer complaint data and used the findings to drive corrective actions, moving the station into the top ten across the EU on that measure.
+<br>
 
-This is where most of my analytical instinct comes from. Live operational data teaches you things a clean dataset does not: numbers move for reasons, the metric is rarely the actual problem, and a report nobody acts on is wasted work.
+**Logistics Operations Coordinator, JD.com**
+
+Daily operational reporting for a delivery station covering fulfilment rate, pickup rate, route efficiency and complaint data. The station holds a 99.6% fulfilment rate, top five in Europe, and a 100% pickup rate ranking first EU wide.
+
+Ran root cause analysis on customer complaint data and used the findings to drive corrective actions, moving the station into the top ten across the EU on that measure. Benchmarked performance across 50+ daily delivery stops to identify route efficiency gaps.
 
 ---
 
 ## 🎓 Background
 
-**MSc Project Management** — Ravensbourne University, London
-**LLB Law** — Igbinedion University, Nigeria
-
-Law taught me to build an argument from evidence and expect it to be challenged. That habit transfers directly to analysis.
+**MSc Project Management**, Ravensbourne University, London
+**LLB Law**, Igbinedion University, Nigeria
 
 **Certifications**
 - IBM Data Analyst Professional Certificate
 - Google Data Analytics Professional Certificate
-- Supply Chain Logistics — Rutgers University via Coursera
+- Supply Chain Logistics, Rutgers University via Coursera
 
 ---
 
