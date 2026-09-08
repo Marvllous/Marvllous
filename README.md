@@ -105,7 +105,7 @@ I also try to be clear about where the evidence stops. On my last project I foun
 
 **Data Analytics Consultant, Amdari**
 
-Project based analytics across multiple business contexts. Analysed large datasets, built interactive dashboards tracking KPIs including downtime rate, completion rate and engagement metrics, and delivered recommendations that supported process improvements. The projects above came from this work.
+Project based analytics across multiple business contexts. Analysed large datasets, built interactive dashboards tracking KPIs including downtime rate, completion rate and engagement metrics, and delivered recommendations that supported process improvements. GreenTech and StreamWave came from this work.
 
 <br>
 
