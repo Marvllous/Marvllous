@@ -15,7 +15,7 @@
 
 > I find what is broken in the data, quantify what it costs, and show teams how to fix it.
 
-My background is operational, so I approach analysis the way an operations team would: start with the metric, find the gap, work out what is driving it, then say what should change. My project work has covered a range of business problems, from sales and margin analysis to production efficiency and customer engagement. If the analysis does not lead to a decision, it is not finished.
+My background is operational, so I approach analysis the way an operations team would: start with the metric, find the gap, work out what is driving it, then say what should change. My project work spans commercial and production data, from sales and margin analysis to manufacturing efficiency. If the analysis does not lead to a decision, it is not finished.
 
 ---
 
@@ -38,7 +38,7 @@ I also try to be clear about where the evidence stops. On my last project I foun
 | **Nobody knows what is driving a number** | Break the metric down across dimensions until the driver isolates, then quantify what it costs |
 | **An assumption needs testing, not confirming** | Design the query so it can disprove the belief, then report what it actually shows |
 | **A comparison is not like for like** | Build rates rather than raw counts, so volume differences do not distort the ranking |
-| **A metric needs to be built, not just read** | Construct calculated measures at row level, including margin, duration variance and weighted scoring models |
+| **A metric needs to be built, not just read** | Construct calculated measures at row level, including margin, cost and duration variance against plan |
 | **Stakeholders cannot read a spreadsheet** | Build interactive dashboards with filtering, so the same report answers several people's questions |
 | **The numbers need to be trusted** | Validate every figure against a control total before it goes anywhere |
 
@@ -58,13 +58,22 @@ I also try to be clear about where the evidence stops. On my last project I foun
 
 ---
 
+## 🤝 How I Work With People
+
+Analysis only counts once someone acts on it, so most of the job is communication.
+
+I write for the person reading, not for the analyst who built it. That means leading with the decision rather than the method, giving stakeholders a dashboard they can filter themselves instead of a static report they have to ask me about, and being direct about what a number does not tell you.
+
+Two habits from outside analytics carry the most weight. Project Management taught me to work backwards from the outcome someone needs. Law taught me to build an argument from evidence and expect it to be challenged, which is a useful instinct when your conclusion contradicts what a team already believes.
+
+---
+
 ## 📁 Projects
 
 | Project | Tools | Focus |
 |---|---|---|
 | [Emerald Springs Bottling](https://github.com/Marvllous/emerald-springs-sales-analysis) | Excel | Sales, margin and channel analysis |
 | [GreenTech Manufacturing](https://github.com/Marvllous/greentech-production-downtime-analysis) | SQL Server, Power BI | Production downtime and bottlenecks |
-| StreamWave Entertainment | Excel | Viewer engagement and content ROI |
 
 <br>
 
@@ -88,24 +97,13 @@ I also try to be clear about where the evidence stops. On my last project I foun
 
 **What it showed:** 645 batches, 56% delayed, 21.74 days of production time lost. 69% of downtime was systemic rather than operator error, which moved the fix away from performance management and towards maintenance scheduling and material supply.
 
-<br>
-
-### StreamWave Entertainment, Viewer Engagement Analysis
-`Excel` · *repository in progress*
-
-**Problem:** A streaming platform investing across genres without data behind the decision.
-
-**What I did:** Merged four raw datasets, calculated completion rate, repeat viewing and churn risk, then built a weighted scoring model to rank all 9 genres on a single comparable scale. Delivered an interactive dashboard with genre and time filtering.
-
-**What it showed:** 999 users analysed. Drama and Comedy led every metric. Two genres accounted for under 0.2% of engagement between them while still absorbing budget. Subscriptions peaked June to July then declined as cancellations rose.
-
 ---
 
 ## 💼 Experience
 
 **Data Analytics Consultant, Amdari**
 
-Project based analytics across multiple business contexts. Analysed large datasets, built interactive dashboards tracking KPIs including downtime rate, completion rate and engagement metrics, and delivered recommendations that supported process improvements. GreenTech and StreamWave came from this work.
+Project based analytics across multiple business contexts. Analysed large datasets, built interactive dashboards tracking KPIs including downtime rate and production efficiency, and delivered recommendations that supported process improvements. The GreenTech analysis came from this work.
 
 <br>
 
