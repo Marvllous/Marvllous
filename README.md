@@ -15,7 +15,7 @@
 
 > I find what is broken in the data, quantify what it costs, and show teams how to fix it.
 
-My background is operational, so I approach analysis the way an operations team would: start with the metric, find the gap, work out what is driving it, then say what should change. My project work spans commercial and production data, from sales and margin analysis to manufacturing efficiency. If the analysis does not lead to a decision, it is not finished.
+My background is operational, which shapes how I read a dataset. I am less interested in what a number is than in why it moved, and less interested in why it moved than in what someone should do about it. My work spans commercial and production data, and the goal is the same either way.
 
 ---
 
