@@ -135,5 +135,7 @@ Project based analytics across production and media data. Restructured raw opera
 ## 📬 Contact
 
 **Email:** marvellousug7@gmail.com
+
 **LinkedIn:** [linkedin.com/in/marvel7](https://www.linkedin.com/in/marvel7/)
+
 **CV:** [View PDF](Marvellous-Umeilechukwu-CV.pdf)
