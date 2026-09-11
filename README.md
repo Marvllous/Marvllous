@@ -14,8 +14,9 @@
 ---
 
 > I find what is broken in the data, quantify what it costs, and show teams how to fix it.
+
 My background is operational, which shapes how I read a dataset. I am less interested in what a number is than in why it moved, and less interested in why it moved than in what someone should do about it. The domain changes, the question does not.
----
+
 
 ## 🔎 How I Work
 
