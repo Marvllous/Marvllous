@@ -34,8 +34,8 @@ I also try to be clear about where the evidence stops. On my last project I foun
 | Problem | How I handle it |
 |---|---|
 | **Data arrives split across systems** | Join multiple tables on shared keys so every record carries its full context, in SQL or Excel depending on scale |
-| **Raw data is not analysis ready** | Validate the source before transforming it, then restructure wide tables into a queryable shape and correct data types |
-| **Nobody knows what is driving a number** | Break the metric down across dimensions until the driver isolates, then quantify what it costs |
+| **Raw data is not analysis ready** | Validate the source before transforming it, then restructure wide tables into rows that can be grouped and joined, and correct the data types |
+| **Nobody knows what is driving a number** | Break the metric down across dimensions until I can isolate what is driving it, then quantify what it costs |
 | **An assumption needs testing, not confirming** | Design the query so it can disprove the belief, then report what it actually shows |
 | **A comparison is not like for like** | Build rates rather than raw counts, so volume differences do not distort the ranking |
 | **A metric needs to be built, not just read** | Construct calculated measures at row level, including margin, cost and duration variance against plan |
@@ -46,10 +46,10 @@ I also try to be clear about where the evidence stops. On my last project I foun
 
 | Capability | Applied to |
 |---|---|
-| **Views** | Encapsulating transformation logic so downstream queries stay clean and reusable |
-| **UNPIVOT** | Reshaping wide tables into row structures that can be aggregated and joined |
+| **Views** | Holding transformation logic in one place so downstream queries stay clean and reusable |
+| **UNPIVOT** | Reshaping wide tables into rows that can be grouped and joined |
 | **CTEs** | Staging validation checks before analysis runs |
-| **CASE logic** | Conditional attribution, splitting causes into categories for root cause analysis |
+| **CASE logic** | Splitting causes into categories so root causes can be attributed properly |
 | **COUNT(DISTINCT)** | Building comparable rates across groups of unequal size |
 | **DATEDIFF** | Calculating duration variance against planned targets |
 | **Multi-table joins** | Linking four related tables through fact and dimension keys |
@@ -93,25 +93,31 @@ Two habits from outside analytics carry the most weight. Project Management taug
 
 **Problem:** A manufacturer losing an estimated $1.5M a year to unplanned downtime, with no visibility on the cause. Management assumed operator error was the main driver.
 
-**What I did:** Validated the source data before transforming it, then used UNPIVOT to restructure 13 downtime factor columns into a queryable format. Tested the operator-error assumption directly against the factor reference table rather than accepting it. Built a three page Power BI dashboard covering downtime factors, duration and operator scheduling.
+**What I did:** Validated the source data before transforming it, then used UNPIVOT to restructure 13 downtime factor columns into rows that could be grouped and joined. Tested the operator-error assumption directly against the factor reference table rather than accepting it. Built a three page Power BI dashboard covering downtime factors, duration and operator scheduling.
 
-**What it showed:** 645 batches, 56% delayed, 21.74 days of production time lost. 69% of downtime was systemic rather than operator error, which moved the fix away from performance management and towards maintenance scheduling and material supply.
+**What it showed:** 645 batches, 56% delayed, 21.74 days of production time lost. 69% of 885 downtime events came from process and supply failures rather than operator error, which moved the fix away from performance management and towards maintenance scheduling and material supply.
 
 ---
 
 ## 💼 Experience
 
-**Data Analytics Consultant, Amdari**
+**Data Analytics Consultant, 10Alytics** · Jul 2026 to present
 
-Project based analytics across multiple business contexts. Analysed large datasets, built interactive dashboards tracking KPIs including downtime rate and production efficiency, and delivered recommendations that supported process improvements. The GreenTech analysis came from this work.
+Project based analytics on commercial data. Cleaned and connected disconnected source tables, rebuilt profit at line level, and delivered margin and channel analysis with an interactive Excel dashboard. The Emerald Springs analysis above came from this work.
 
 <br>
 
-**Logistics Operations Coordinator, JD.com**
+**Logistics Operations Associate, JD.com** · Jul 2025 to present
 
-Daily operational reporting for a delivery station covering fulfilment rate, pickup rate, route efficiency and complaint data. The station holds a 99.6% fulfilment rate, top five in Europe, and a 100% pickup rate ranking first EU wide.
+I build and maintain the daily operational reporting for a delivery station, covering fulfilment rate, pickup rate, route efficiency and complaint data. The station reached a 99.6% fulfilment rate, ranking Top 5 in Europe, and a 100% pickup rate that took the No. 1 position EU-wide.
 
-Ran root cause analysis on customer complaint data and used the findings to drive corrective actions, moving the station into the top ten across the EU on that measure. Benchmarked performance across 50+ daily delivery stops to identify route efficiency gaps.
+Analyse 200+ daily delivery stops in Excel using pivot tables to break performance down by route and by driver. Ran root cause analysis on customer complaint data and used the findings to drive corrective actions, ranking the station Top 10 across the EU on that measure.
+
+<br>
+
+**Data Analytics Consultant, Amdari** · Feb 2025 to Jun 2026
+
+Project based analytics across production and media data. Restructured raw operational data for analysis, built dashboards tracking KPIs including downtime rate and production efficiency, and delivered recommendations that supported process improvements. The GreenTech analysis above came from this work.
 
 ---
 
