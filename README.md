@@ -23,8 +23,6 @@ I write the business question in plain English before I touch a query. What are 
 
 I also try to be clear about where the evidence stops. On my last project I found nearly 20% of orders sitting in a pending status. I could quantify the exposure and rule out the obvious causes, but the data could not tell me why. I said so, rather than inventing a reason that sounded better.
 
-I use Claude and ChatGPT for the parts of the job where a second opinion is faster than working alone. Getting DAX syntax right, diagnosing why a visual is not behaving, and stress testing my reasoning before I commit to a conclusion. On the Horizon Trust build one chart was silently flattening every bar, and talking through the model rather than the data is what surfaced an inactive relationship behind it. What I do not do is hand over client data. The tools help with method and logic. The data stays where it belongs.
-
 ---
 
 ## 🛠 What I Can Do With Data
