@@ -17,14 +17,13 @@
 
 My background is operational, which shapes how I read a dataset. I am less interested in what a number is than in why it moved, and less interested in why it moved than in what someone should do about it. The domain changes, the question does not.
 
-
 ## 🔎 How I Work
-
-Most analysis fails for one of two reasons. Either the question was never defined properly, or the answer never reached anyone who could act on it.
 
 I write the business question in plain English before I touch a query. What are we trying to find out, what data answers it, what does the answer look like. Then I validate every summary figure against a control total before I present it, because a clean looking dashboard built on an unverified join is worse than no dashboard.
 
 I also try to be clear about where the evidence stops. On my last project I found nearly 20% of orders sitting in a pending status. I could quantify the exposure and rule out the obvious causes, but the data could not tell me why. I said so, rather than inventing a reason that sounded better.
+
+I use Claude and ChatGPT the way I would use a second analyst, to pressure test work rather than produce it. On the Horizon Trust analysis I had every dashboard figure recomputed independently from the raw source before publishing anything. Two figures turned out to be contradicted by another column in the same file, so they stayed out of the write up. The tools are fast at checking. Deciding what a check means, and what to do when it fails, is still the job.
 
 ---
 
@@ -34,10 +33,12 @@ I also try to be clear about where the evidence stops. On my last project I foun
 |---|---|
 | **Data arrives split across systems** | Join multiple tables on shared keys so every record carries its full context, in SQL or Excel depending on scale |
 | **Raw data is not analysis ready** | Validate the source before transforming it, then restructure wide tables into rows that can be grouped and joined, and correct the data types |
+| **One flat table cannot be analysed** | Model it into a fact table and dimensions, checking every key for conflicting attributes before collapsing it |
 | **Nobody knows what is driving a number** | Break the metric down across dimensions until I can isolate what is driving it, then quantify what it costs |
 | **An assumption needs testing, not confirming** | Design the query so it can disprove the belief, then report what it actually shows |
 | **A comparison is not like for like** | Build rates rather than raw counts, so volume differences do not distort the ranking |
 | **A metric needs to be built, not just read** | Construct calculated measures at row level, including margin, cost and duration variance against plan |
+| **Size is being mistaken for risk** | Separate exposure from failure rate, because the biggest balance and the biggest problem are often different things |
 | **Stakeholders cannot read a spreadsheet** | Build interactive dashboards with filtering, so the same report answers several people's questions |
 | **The numbers need to be trusted** | Validate every figure against a control total before it goes anywhere |
 
@@ -53,7 +54,20 @@ I also try to be clear about where the evidence stops. On my last project I foun
 | **DATEDIFF** | Calculating duration variance against planned targets |
 | **Multi-table joins** | Linking four related tables through fact and dimension keys |
 
-`SQL Server` `PostgreSQL` `Power BI` `Power Query` `DAX` `Excel`
+### Power BI
+
+| Capability | Applied to |
+|---|---|
+| **Star schema modelling** | Splitting one flat table of 37 columns into a fact table and six dimensions so measures aggregate correctly |
+| **Key integrity validation** | Testing every dimension key for conflicting attributes before removing duplicates, so nothing is lost silently |
+| **DAX measures** | Building rates, distinct counts and filtered aggregates that respond to every slicer on the page |
+| **Calculated columns** | Bucketing continuous values into bands a business can act on, such as ageing in 30 day periods |
+| **DAX date tables** | Building a continuous calendar so time based visuals do not break on gaps in the source |
+| **Relationship management** | Diagnosing an inactive relationship that was silently flattening a chart, then repairing it |
+| **Conditional formatting by measure** | Letting thresholds flag themselves as the data changes, rather than colouring by hand |
+| **Decomposition trees** | Drilling exposure through product, segment, geography and branch type in one visual |
+
+`SQL Server` `PostgreSQL` `Power BI` `Power Query` `DAX` `Excel` `Claude` `ChatGPT`
 
 ---
 
@@ -71,19 +85,20 @@ Two habits from outside analytics carry the most weight. Project Management taug
 
 | Project | Tools | Focus |
 |---|---|---|
-| [Emerald Springs Bottling](https://github.com/Marvllous/emerald-springs-sales-analysis) | Excel | Sales, margin and channel analysis |
+| [Horizon Trust Bank](https://github.com/Marvllous/horizon-trust-loan-portfolio-risk-analysis) | Power BI, DAX | Credit risk, defaults and exposure |
 | [GreenTech Manufacturing](https://github.com/Marvllous/greentech-production-downtime-analysis) | SQL Server, Power BI | Production downtime and bottlenecks |
+| [Emerald Springs Bottling](https://github.com/Marvllous/emerald-springs-sales-analysis) | Excel | Sales, margin and channel analysis |
 
 <br>
 
-### [Emerald Springs Bottling, Sales and Order Analysis](https://github.com/Marvllous/emerald-springs-sales-analysis)
-`Excel`
+### [Horizon Trust Bank, Loan Portfolio Risk Analysis](https://github.com/Marvllous/horizon-trust-loan-portfolio-risk-analysis)
+`Power BI` `DAX` `Power Query`
 
-**Problem:** A beverage distributor could see revenue but not what was driving it. Three unlinked tables, inconsistent text fields, dates stored as serial numbers.
+**Problem:** A commercial bank with $636.68M lent across 5,000 loans could not see where its credit risk sat. Everything lived in one flat table of 37 columns, with no model behind it and no way to group, compare or drill into anything.
 
-**What I did:** Cleaned and standardised the source data, joined all three tables on ID, then built gross sales, cost, discount and profit at line level. Validated every total against a control figure.
+**What I did:** Modelled it into a star schema with a fact table and six dimensions, testing every key for conflicting attributes before collapsing duplicates. Built a continuous calendar in DAX, held every measure in a dedicated table, and added a calculated column bucketing loan ageing into 30 day bands. Delivered a two page dashboard covering profit and loss, with cross-filtering, slicers and thresholds that flag themselves.
 
-**What it showed:** 250 orders, €12,960.50 gross, 44.4% margin. One channel out-earned two others combined. The largest revenue category ranked near the bottom on profit per unit, while the smallest category held the highest margin product of all 20 in the range.
+**What it showed:** 93.8% of the bank's 209 defaults came from one customer segment holding 29% of the lending. Mortgage held 88% of the outstanding balance and under 10% of the failures, so the largest exposure and the actual losses sat in different products entirely. Branch lending volume varied 1.4 times across 20 branches while default rate varied 2.8 times, which moved the question away from lending scale and towards how credit decisions are made locally.
 
 <br>
 
@@ -96,13 +111,24 @@ Two habits from outside analytics carry the most weight. Project Management taug
 
 **What it showed:** 645 batches, 56% delayed, 21.74 days of production time lost. 69% of 885 downtime events came from process and supply failures rather than operator error, which moved the fix away from performance management and towards maintenance scheduling and material supply.
 
+<br>
+
+### [Emerald Springs Bottling, Sales and Order Analysis](https://github.com/Marvllous/emerald-springs-sales-analysis)
+`Excel`
+
+**Problem:** A beverage distributor could see revenue but not what was driving it. Three unlinked tables, inconsistent text fields, dates stored as serial numbers.
+
+**What I did:** Cleaned and standardised the source data, joined all three tables on ID, then built gross sales, cost, discount and profit at line level. Validated every total against a control figure.
+
+**What it showed:** 250 orders, €12,960.50 gross, 44.4% margin. One channel out-earned two others combined. The largest revenue category ranked near the bottom on profit per unit, while the smallest category held the highest margin product of all 20 in the range.
+
 ---
 
 ## 💼 Experience
 
 **Data Analytics Consultant, 10Alytics** · Jul 2026 to present
 
-Project based analytics on commercial data. Cleaned and connected disconnected source tables, rebuilt profit at line level, and delivered margin and channel analysis with an interactive Excel dashboard. The Emerald Springs analysis above came from this work.
+Project based analytics on commercial and financial data. Cleaned and connected disconnected source tables, rebuilt profit at line level, and delivered margin and channel analysis with an interactive Excel dashboard. Modelled a 5,000 record loan portfolio into a star schema and built a two page Power BI credit risk dashboard covering lending performance, default concentration and exposure. The Emerald Springs and Horizon Trust analyses above came from this work.
 
 <br>
 
