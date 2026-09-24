@@ -23,7 +23,7 @@ I write the business question in plain English before I touch a query. What are 
 
 I also try to be clear about where the evidence stops. On my last project I found nearly 20% of orders sitting in a pending status. I could quantify the exposure and rule out the obvious causes, but the data could not tell me why. I said so, rather than inventing a reason that sounded better.
 
-I use Claude and ChatGPT the way I would use a second analyst, to pressure test work rather than produce it. On the Horizon Trust analysis I had every dashboard figure recomputed independently from the raw source before publishing anything. Two figures turned out to be contradicted by another column in the same file, so they stayed out of the write up. The tools are fast at checking. Deciding what a check means, and what to do when it fails, is still the job.
+I use Claude and ChatGPT for the parts of the job where a second opinion is faster than working alone. Getting DAX syntax right, diagnosing why a visual is not behaving, and stress testing my reasoning before I commit to a conclusion. On the Horizon Trust build one chart was silently flattening every bar, and talking through the model rather than the data is what surfaced an inactive relationship behind it. What I do not do is hand over client data. The tools help with method and logic. The data stays where it belongs.
 
 ---
 
