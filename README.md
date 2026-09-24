@@ -147,6 +147,7 @@ Project based analytics across production and media data. Restructured raw opera
 ## 🎓 Background
 
 **MSc Project Management**, Ravensbourne University, London
+
 **LLB Law**, Igbinedion University, Nigeria
 
 **Certifications**
