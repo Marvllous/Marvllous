@@ -151,7 +151,6 @@ Project based analytics across production and media data. Restructured raw opera
 **LLB Law**, Igbinedion University, Nigeria
 
 **Certifications**
-- IBM Data Analyst Professional Certificate
 - Google Data Analytics Professional Certificate
 - Supply Chain Logistics, Rutgers University via Coursera
 
