@@ -2,7 +2,7 @@
 
 <p align="center">
   <strong>Data Analyst</strong><br>
-  SQL · Power BI · Excel
+ DATA & OPERATIONS ANALYST
 </p>
 
 <p align="center">
