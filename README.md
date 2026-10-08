@@ -124,7 +124,7 @@ Two habits from outside analytics carry the most weight. Project Management taug
 
 ## 💼 Experience
 
-**Data Analytics Consultant, 10Alytics** · Jul 2026 to present
+**Data Analyst, 10Alytics** · Jul 2026 to present
 
 Project based analytics on commercial and financial data. Cleaned and connected disconnected source tables, rebuilt profit at line level, and delivered margin and channel analysis with an interactive Excel dashboard. Modelled a 5,000 record loan portfolio into a star schema and built a two page Power BI credit risk dashboard covering lending performance, default concentration and exposure. The Emerald Springs and Horizon Trust analyses above came from this work.
 
@@ -138,7 +138,7 @@ Analyse 200+ daily delivery stops in Excel using pivot tables to break performan
 
 <br>
 
-**Data Analytics Consultant, Amdari** · Feb 2025 to Jun 2026
+**Data Analyst, Amdari** · Feb 2025 to Jun 2026
 
 Project based analytics across production and media data. Restructured raw operational data for analysis, built dashboards tracking KPIs including downtime rate and production efficiency, and delivered recommendations that supported process improvements. The GreenTech analysis above came from this work.
 
