@@ -1,8 +1,7 @@
 <h1 align="center">Marvellous Umeilechukwu</h1>
 
 <p align="center">
-  <strong>Data Analyst</strong><br>
-  Data and Operations Analyst
+  <strong>Data and Operations Analyst</strong><br>
 </p>
 
 <p align="center">
