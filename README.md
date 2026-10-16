@@ -142,9 +142,9 @@ Analyse 200+ daily delivery stops in Excel using pivot tables to break performan
 
 **LLB Law**, Igbinedion University, Nigeria
 
-**Training**
-- 10Alytics, applied data analytics programme, 2026
-- Amdari, applied data analytics programme, 2025 to 2026
+**Analytics Programmes**
+- 10Alytics, applied data analytics, 2026
+- Amdari, applied data analytics, 2025 to 2026
 
 **Certifications**
 - Google Data Analytics Professional Certificate
