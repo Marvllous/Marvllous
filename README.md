@@ -71,11 +71,13 @@ I also try to be clear about where the evidence stops. In a sales and order revi
 
 ## 🤝 How I Work With People
 
-Analysis only counts once someone acts on it, so most of the job is communication.
+I learned to communicate analysis inside an operation rather than from a reporting team. The difference is the feedback loop. What I build is read at the start of a shift and acted on before the end of it, so if a figure is unclear or wrong I find out the same afternoon, not in a review three weeks later.
 
-I write for the person reading, not for the analyst who built it. That means leading with the decision rather than the method, giving stakeholders a dashboard they can filter themselves instead of a static report they have to ask me about, and being direct about what a number does not tell you.
+That teaches you fast. Nobody reading before a shift wants method. They want the number, what changed and what to do about it. A report that needs explaining has already failed.
 
-Two habits from outside analytics carry the most weight. Project Management taught me to work backwards from the outcome someone needs. Law taught me to build an argument from evidence and expect it to be challenged, which is a useful instinct when your conclusion contradicts what a team already believes.
+It also teaches you that the question someone asks is rarely the whole question. People ask for a figure when what they actually need is a decision, so I find out what the answer is for before I give it. That one habit has saved more wasted work than any technique I know.
+
+The last part is being straight about limits. If the data can size a problem but not explain it, I say so. Analysts lose credibility by filling gaps with something that sounds plausible, and you only get to do that once.
 
 ---
 
