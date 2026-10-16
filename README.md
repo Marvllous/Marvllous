@@ -71,13 +71,13 @@ I also try to be clear about where the evidence stops. In a sales and order revi
 
 ## 🤝 How I Work With People
 
-I learned to communicate analysis inside an operation rather than from a reporting team. The difference is the feedback loop. What I build is read at the start of a shift and acted on before the end of it, so if a figure is unclear or wrong I find out the same afternoon, not in a review three weeks later.
+A report that needs explaining has already failed.
 
-That teaches you fast. Nobody reading before a shift wants method. They want the number, what changed and what to do about it. A report that needs explaining has already failed.
+People act on my reporting the same day. That makes it obvious, fast, when a number does not land. What people want is simple: the number, what changed, and what to do about it.
 
-It also teaches you that the question someone asks is rarely the whole question. People ask for a figure when what they actually need is a decision, so I find out what the answer is for before I give it. That one habit has saved more wasted work than any technique I know.
+The question someone asks is rarely the whole question. People ask for a figure when they need a decision, so I find out what the answer is for before I give it.
 
-The last part is being straight about limits. If the data can size a problem but not explain it, I say so. Analysts lose credibility by filling gaps with something that sounds plausible, and you only get to do that once.
+When the data can size a problem but not explain it, I say so. Filling that gap with something plausible costs more than the gap does.
 
 ---
 
