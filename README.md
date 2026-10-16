@@ -87,13 +87,13 @@ Project based analytics on supplied industry datasets, each scoped to a business
 
 | Project | Tools | Focus |
 |---|---|---|
-| [Loan Portfolio Risk Analysis](https://github.com/Marvllous/horizon-trust-loan-portfolio-risk-analysis) | Power BI, DAX | Credit risk, defaults and exposure |
+| [Loan Portfolio Risk Analysis](https://github.com/Marvllous/loan-portfolio-risk-analysis) | Power BI, DAX | Credit risk, defaults and exposure |
 | [Production Downtime Analysis](https://github.com/Marvllous/greentech-production-downtime-analysis) | SQL Server, Power BI | Production downtime and bottlenecks |
 | [Sales and Order Analysis](https://github.com/Marvllous/emerald-springs-sales-analysis) | Excel | Sales, margin and channel analysis |
 
 <br>
 
-### [Loan Portfolio Risk Analysis](https://github.com/Marvllous/horizon-trust-loan-portfolio-risk-analysis)
+### [Loan Portfolio Risk Analysis](https://github.com/Marvllous/loan-portfolio-risk-analysis)
 `Power BI` `DAX` `Power Query` · 10Alytics, 2026
 
 **Problem:** A lending dataset of 5,000 loans and $636.68M of lending, held in one flat table of 37 columns. No model behind it and no way to group, compare or drill into anything, so nobody could say where the credit risk sat.
