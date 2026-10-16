@@ -2,7 +2,7 @@
 
 <p align="center">
   <strong>Data Analyst</strong><br>
-  Data and Operations Analysis
+  Data and Operations Analyst
 </p>
 
 <p align="center">
