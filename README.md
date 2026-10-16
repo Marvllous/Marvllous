@@ -111,18 +111,18 @@ Project based analytics on supplied industry datasets, each scoped to a business
 
 **What I did:** Validated the source data before transforming it, then used UNPIVOT to restructure 13 downtime factor columns into rows that could be grouped and joined. Tested the operator-error assumption directly against the factor reference table rather than accepting it. Built a three page Power BI dashboard covering downtime factors, duration and operator scheduling.
 
-**What it showed:** 645 batches, 56% delayed, 21.74 days of production time lost. 69% of 885 downtime events came from process and supply failures rather than operator error, which moved the fix away from performance management and towards maintenance scheduling and material supply.
+**What it showed:** 645 batches, 56% delayed, 21.74 days of production time lost. 69% of 885 downtime events were non-operator, which moved the fix away from performance management and towards maintenance scheduling, supply and cleaning cycle planning.
 
 <br>
 
 ### [Sales and Order Analysis](https://github.com/Marvllous/sales-and-order-analysis)
 `Excel` · 10Alytics, 2026
 
-**Problem:** One month of sales and order data for a beverage distributor, covering 250 orders across three unlinked tables, with inconsistent text fields and dates stored as serial numbers. Revenue was visible, what drove it was not.
+**Problem:** One month of sales and order data for a beverage distributor, held in three unlinked tables carrying 259 rows for 250 real orders, inconsistent text fields and dates stored as serial numbers. Revenue was visible, what drove it was not.
 
-**What I did:** Cleaned and standardised the source data, joined all three tables on ID, then built gross sales, cost, discount and profit at line level. Validated every total against a control figure.
+**What I did:** Reconciled the order table to 250 unique orders, standardised a status field that appeared in 15 spellings, joined all three tables on ID, then built gross sales, cost, discount and profit at line level. Validated every total against a control figure.
 
-**What it showed:** 250 orders, €12,960.50 gross, 44.4% margin. One sales channel out-earned two others combined. The largest revenue category ranked near the bottom on profit per unit, while the smallest category held the highest margin product of all 20 in the range.
+**What it showed:** 250 orders, €12,960.50 gross, 44.4% margin. One third of revenue sits with customers who prefer a single ordering channel. The largest revenue category ranked near the bottom on profit per unit, while the smallest category held the highest margin product of all 20 in the range.
 
 ---
 
