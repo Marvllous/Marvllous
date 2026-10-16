@@ -89,7 +89,7 @@ Project based analytics on supplied industry datasets, each scoped to a business
 |---|---|---|
 | [Loan Portfolio Risk Analysis](https://github.com/Marvllous/loan-portfolio-risk-analysis) | Power BI, DAX | Credit risk, defaults and exposure |
 | [Production Downtime Analysis](https://github.com/Marvllous/greentech-production-downtime-analysis) | SQL Server, Power BI | Production downtime and bottlenecks |
-| [Sales and Order Analysis](https://github.com/Marvllous/emerald-springs-sales-analysis) | Excel | Sales, margin and channel analysis |
+| [Sales and Order Analysis](https://github.com/Marvllous/sales-and-order-analysis) | Excel | Sales, margin and channel analysis |
 
 <br>
 
@@ -115,7 +115,7 @@ Project based analytics on supplied industry datasets, each scoped to a business
 
 <br>
 
-### [Sales and Order Analysis](https://github.com/Marvllous/emerald-springs-sales-analysis)
+### [Sales and Order Analysis](https://github.com/Marvllous/sales-and-order-analysis)
 `Excel` · 10Alytics, 2026
 
 **Problem:** One month of sales and order data for a beverage distributor, covering 250 orders across three unlinked tables, with inconsistent text fields and dates stored as serial numbers. Revenue was visible, what drove it was not.
