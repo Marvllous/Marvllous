@@ -88,7 +88,7 @@ Project based analytics on supplied industry datasets, each scoped to a business
 | Project | Tools | Focus |
 |---|---|---|
 | [Loan Portfolio Risk Analysis](https://github.com/Marvllous/loan-portfolio-risk-analysis) | Power BI, DAX | Credit risk, defaults and exposure |
-| [Production Downtime Analysis](https://github.com/Marvllous/greentech-production-downtime-analysis) | SQL Server, Power BI | Production downtime and bottlenecks |
+| [Production Downtime Analysis](https://github.com/Marvllous/production-downtime-analysis) | SQL Server, Power BI | Production downtime and bottlenecks |
 | [Sales and Order Analysis](https://github.com/Marvllous/sales-and-order-analysis) | Excel | Sales, margin and channel analysis |
 
 <br>
@@ -104,7 +104,7 @@ Project based analytics on supplied industry datasets, each scoped to a business
 
 <br>
 
-### [Production Downtime Analysis](https://github.com/Marvllous/greentech-production-downtime-analysis)
+### [Production Downtime Analysis](https://github.com/Marvllous/production-downtime-analysis)
 `SQL Server` `Power BI` · Amdari, 2025 to 2026
 
 **Problem:** A manufacturing dataset covering 645 production batches at a site losing an estimated $1.5M a year to unplanned downtime, with no visibility on the cause. The brief recorded that management assumed operator error was the main driver.
