@@ -147,7 +147,9 @@ Applied analytics programme, project delivery. Project work on supplied industry
 
 **Professional Development**
 
-10Alytics, applied analytics programme, 2026 to present. Instructor-led curriculum covering Excel, Power BI and Power BI Service, SQL, Tableau, Microsoft Fabric, Python and AI-assisted analytics.
+**10Alytics** · 2026 to present
+
+Applied analytics programme. Instructor-led curriculum covering Excel, Power BI and Power BI Service, SQL, Tableau, Microsoft Fabric, Python and AI-assisted analytics.
 
 **Certifications**
 - Google Data Analytics Professional Certificate
