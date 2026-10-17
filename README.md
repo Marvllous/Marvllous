@@ -14,7 +14,7 @@
 
 > I find what is broken in the data, quantify what it costs, and show teams how to fix it.
 
-My background is operational, which shapes how I read a data. I came up producing numbers that people acted on the same day, so I tend to skip past what a number is and go looking for why it moved, and then for what anyone is supposed to do about it. Banking, manufacturing, logistics, the question has been the same every time.
+My background is operational, which shapes how I read data. I came up producing numbers that people acted on the same day, so I tend to skip past what a number is and go looking for why it moved, and then for what anyone is supposed to do about it. Banking, manufacturing, logistics, the question has been the same every time.
 
 ## 🔎 How I Work
 
