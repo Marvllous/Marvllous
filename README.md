@@ -14,7 +14,7 @@
 
 > I find what is broken in the data, quantify what it costs, and show teams how to fix it.
 
-My background is operational, which shapes how I read a dataset. I am less interested in what a number is than in why it moved, and less interested in why it moved than in what someone should do about it. The domain changes, the question does not.
+My background is operational, which shapes how I read a dataset. I came up producing numbers that people acted on the same day, so I tend to skip past what a number is and go looking for why it moved, and then for what anyone is supposed to do about it. Banking, manufacturing, logistics, the question has been the same every time.
 
 ## 🔎 How I Work
 
@@ -70,11 +70,9 @@ I also try to be clear about where the evidence stops. In a sales and order revi
 
 ## 🤝 How I Work With People
 
-A report that needs explaining has already failed.
+Most of my reporting gets read the same morning it goes out, and people act on it that day. You find out quickly when a number does not land, because someone comes back asking what it means. A report that needs explaining has already failed.
 
-People act on my reporting the same day. That makes it obvious, fast, when a number does not land. What people want is simple: the number, what changed, and what to do about it.
-
-The question someone asks is rarely the whole question. People ask for a figure when they need a decision, so I find out what the answer is for before I give it.
+The question someone asks is rarely the whole question. Someone asking for last week's numbers usually has a decision sitting behind it, so I ask what they are deciding before I answer.
 
 When the data can size a problem but not explain it, I say so. Filling that gap with something plausible costs more than the gap does.
 
@@ -129,7 +127,7 @@ Project based analytics on supplied industry datasets, each scoped to a business
 
 **Logistics Operations Associate, JD.com** · Jul 2025 to present
 
-I build and maintain the daily operational reporting for a delivery station, covering fulfilment rate, pickup rate, route efficiency and complaint data. The station reached a 99.6% fulfilment rate, ranking Top 5 in Europe, and a 100% pickup rate that took the No. 1 position EU-wide.
+I build and maintain the daily, weekly and monthly operational reporting for a delivery station, covering fulfilment rate, pickup rate, route efficiency and complaint data. The station reached a 99.6% fulfilment rate, ranking Top 5 in Europe, and a 100% pickup rate that took the No. 1 position EU-wide.
 
 Analyse 200+ daily delivery stops in Excel using pivot tables to break performance down by route and by driver. Ran root cause analysis on customer complaint data and used the findings to drive corrective actions, which ranked the station Top 10 across the EU on that measure.
 
