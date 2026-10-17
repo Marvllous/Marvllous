@@ -93,7 +93,7 @@ Project based analytics on supplied industry datasets, each scoped to a business
 <br>
 
 ### [Loan Portfolio Risk Analysis](https://github.com/Marvllous/loan-portfolio-risk-analysis)
-`Power BI` `DAX` `Power Query` · 10Alytics, 2026
+`Power BI` `DAX` `Power Query` · Amdari, 2026
 
 **Problem:** A lending dataset of 5,000 loans and $636.68M of lending, held in one flat table of 37 columns. No model behind it and no way to group, compare or drill into anything, so nobody could say where the credit risk sat.
 
@@ -115,7 +115,7 @@ Project based analytics on supplied industry datasets, each scoped to a business
 <br>
 
 ### [Sales and Order Analysis](https://github.com/Marvllous/sales-and-order-analysis)
-`Excel` · 10Alytics, 2026
+`Excel` · Amdari, 2026
 
 **Problem:** One month of sales and order data for a beverage distributor, held in three unlinked tables carrying 259 rows for 250 real orders, inconsistent text fields and dates stored as serial numbers. Revenue was visible, what drove it was not.
 
@@ -133,6 +133,10 @@ I build and maintain the daily operational reporting for a delivery station, cov
 
 Analyse 200+ daily delivery stops in Excel using pivot tables to break performance down by route and by driver. Ran root cause analysis on customer complaint data and used the findings to drive corrective actions, which ranked the station Top 10 across the EU on that measure.
 
+**Data Analyst, Amdari** · Feb 2025 to present
+
+Applied analytics programme, project delivery. Project work on supplied industry datasets, each scoped to a business brief and delivered end to end. The three projects above were delivered through this programme.
+
 ---
 
 ## 🎓 Background
@@ -141,9 +145,9 @@ Analyse 200+ daily delivery stops in Excel using pivot tables to break performan
 
 **LLB Law**, Igbinedion University, Nigeria
 
-**Analytics Programmes**
-- 10Alytics, applied data analytics, 2026
-- Amdari, applied data analytics, 2025 to 2026
+**Professional Development**
+
+10Alytics, applied analytics programme, 2026 to present. Instructor-led curriculum covering Excel, Power BI and Power BI Service, SQL, Tableau, Microsoft Fabric, Python and AI-assisted analytics.
 
 **Certifications**
 - Google Data Analytics Professional Certificate
