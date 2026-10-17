@@ -74,7 +74,7 @@ Most of my reporting gets read the same morning it goes out, and people act on i
 
 The question someone asks is rarely the whole question. Someone asking for last week's numbers usually has a decision sitting behind it, so I ask what they are deciding before I answer.
 
-When the data can size a problem but not explain it, I say so. Filling that gap with something plausible costs more than the gap does.
+When the data can size a problem but not explain it, I say so. A guess that sounds right is worse than admitting you do not know, because people act on it.
 
 ---
 
