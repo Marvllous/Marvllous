@@ -129,6 +129,8 @@ Project based analytics on supplied industry datasets, each scoped to a business
 
 I build and maintain the daily, weekly and monthly operational reporting for a delivery station, covering fulfilment rate, pickup rate, route efficiency and complaint data. The station reached a 99.6% fulfilment rate, ranking Top 5 in Europe, and a 100% pickup rate that took the No. 1 position EU-wide.
 
+I am the escalation point for delivery exceptions at the station. Cases come in through the day and we respond inside 30 minutes. Customer service refers one over and I take it from both ends, the driver on the round and the customer on the phone. Address resolution failures, non-receipt claims. The same cases turn up in the complaint data I analyse, so I am not reading a report about something I did not see.
+
 Analyse 200+ daily delivery stops in Excel using pivot tables to break performance down by route and by driver. Ran root cause analysis on customer complaint data and used the findings to drive corrective actions, which ranked the station Top 10 across the EU on that measure.
 
 **Data Analyst, Amdari** · Feb 2025 to present
