@@ -20,7 +20,7 @@ My background is operational, which shapes how I read data. I came up producing 
 
 I write the business question in plain English before I touch a query. What are we trying to find out, what data answers it, what does the answer look like. Then I validate every summary figure against a control total before I present it, because a clean looking dashboard built on an unverified join is worse than no dashboard.
 
-I also try to be clear about where the evidence stops. In a sales and order review, nearly 20% of orders sat in a pending status. I could quantify the exposure and rule out the obvious causes, but the data could not tell me why. I said so, rather than inventing a reason that sounded better.
+I also try to be clear about where the evidence stops. In a sales and order review, nearly 20% of orders sat in a pending status. I could quantify the exposure and rule out the obvious causes, but the data could not tell me why. I said so, instead of inventing a reason that sounded better.
 
 ---
 
@@ -33,7 +33,8 @@ I also try to be clear about where the evidence stops. In a sales and order revi
 | **One flat table cannot be analysed** | Model it into a fact table and dimensions, checking every key for conflicting attributes before collapsing it |
 | **Nobody knows what is driving a number** | Break the metric down across dimensions until I can isolate what is driving it, then quantify what it costs |
 | **An assumption needs testing, not confirming** | Design the query so it can disprove the belief, then report what it actually shows |
-| **A comparison is not like for like** | Build rates rather than raw counts, so volume differences do not distort the ranking |
+| **A difference looks real but might be noise** | Test whether a gap between groups is bigger than chance would produce, before anyone builds a policy on it |
+| **A comparison is not like for like** | Build rates instead of raw counts, so volume differences do not distort the ranking |
 | **A metric needs to be built, not just read** | Construct calculated measures at row level, including margin, cost and duration variance against plan |
 | **Size is being mistaken for risk** | Separate exposure from failure rate, because the biggest balance and the biggest problem are often different things |
 | **Stakeholders cannot read a spreadsheet** | Build interactive dashboards with filtering, so the same report answers several people's questions |
@@ -58,10 +59,12 @@ I also try to be clear about where the evidence stops. In a sales and order revi
 | **Star schema modelling** | Splitting one flat table of 37 columns into a fact table and six dimensions so measures aggregate correctly |
 | **Key integrity validation** | Testing every dimension key for conflicting attributes before removing duplicates, so nothing is lost silently |
 | **DAX measures** | Building rates, distinct counts and filtered aggregates that respond to every slicer on the page |
+| **Power Query (M)** | Writing conditional columns that band continuous values, and that apply a calculation only to the records it should touch |
 | **Calculated columns** | Bucketing continuous values into bands a business can act on, such as ageing in 30 day periods |
 | **DAX date tables** | Building a continuous calendar so time based visuals do not break on gaps in the source |
+| **M date tables** | Generating a parameter driven calendar that rebuilds itself when the data period changes |
 | **Relationship management** | Diagnosing an inactive relationship that was silently flattening a chart, then repairing it |
-| **Conditional formatting by measure** | Letting thresholds flag themselves as the data changes, rather than colouring by hand |
+| **Conditional formatting by measure** | Letting thresholds flag themselves as the data changes, instead of colouring by hand |
 | **Decomposition trees** | Drilling exposure through product, segment, geography and branch type in one visual |
 
 `SQL Server` `PostgreSQL` `Power BI` `Power Query` `DAX` `Excel` `Claude` `ChatGPT`
@@ -80,13 +83,25 @@ When the data can size a problem but not explain it, I say so. A guess that soun
 
 ## 📁 Analytics Projects
 
-Project based analytics on supplied industry datasets, each scoped to a business brief and delivered end to end. Full documentation, queries, DAX, dashboards and raw source data are published in each repository, so every figure below can be reproduced rather than taken on trust.
+Project based analytics on supplied industry datasets, each scoped to a business brief and delivered end to end. Full documentation, queries, DAX, dashboards and raw source data are published in each repository, so every figure below can be reproduced instead of taken on trust.
 
 | Project | Tools | Focus |
 |---|---|---|
+| [Bank Loan Default Analysis](https://github.com/Marvllous/bank-loan-default-analysis) | Power BI, Power Query, DAX | Loan defaults, arrears and loss concentration |
 | [Loan Portfolio Risk Analysis](https://github.com/Marvllous/loan-portfolio-risk-analysis) | Power BI, DAX | Credit risk, defaults and exposure |
 | [Production Downtime Analysis](https://github.com/Marvllous/production-downtime-analysis) | SQL Server, Power BI | Production downtime and bottlenecks |
 | [Sales and Order Analysis](https://github.com/Marvllous/sales-and-order-analysis) | Excel | Sales, margin and channel analysis |
+
+<br>
+
+### [Bank Loan Default Analysis](https://github.com/Marvllous/bank-loan-default-analysis)
+`Power BI` `Power Query` `DAX` · Amdari, 2026
+
+**Problem:** A bank holding 1,500 loans and $36.62M of lending could not tell in advance which loans would go bad. Its risk assessment was no longer keeping up, and the brief asked which borrower groups and loan types were driving the losses.
+
+**What I did:** Built the transformation layer in Power Query, banding age, income, credit score and loan amount so continuous values could be grouped, and writing a conditional column that counts interest only on loans still being paid. Built a date table in M. Then tested every borrower characteristic against the default outcome instead of reading the tallest bar as the answer.
+
+**What it showed:** None of the characteristics the bank collects separate defaulters from repayers. Credit score averages 678.5 on defaulted loans against 682.7 on repaid ones, and it does not move the price either, correlating with interest rate at -0.012. The loss concentrates by size instead. Loans above $44k are 17.3% of the book and 40.1% of the $6.56M lost. A further $7.25M sits in arrears, more than has already been written off.
 
 <br>
 
@@ -106,7 +121,7 @@ Project based analytics on supplied industry datasets, each scoped to a business
 
 **Problem:** A manufacturing dataset covering 645 production batches at a site losing an estimated $1.5M a year to unplanned downtime, with no visibility on the cause. The brief recorded that management assumed operator error was the main driver.
 
-**What I did:** Validated the source data before transforming it, then used UNPIVOT to restructure 13 downtime factor columns into rows that could be grouped and joined. Tested the operator-error assumption directly against the factor reference table rather than accepting it. Built a three page Power BI dashboard covering downtime factors, duration and operator scheduling.
+**What I did:** Validated the source data before transforming it, then used UNPIVOT to restructure 13 downtime factor columns into rows that could be grouped and joined. Tested the operator-error assumption directly against the factor reference table instead of accepting it. Built a three page Power BI dashboard covering downtime factors, duration and operator scheduling.
 
 **What it showed:** 645 batches, 56% delayed, 21.74 days of production time lost. 69% of 885 downtime events were non-operator, which moved the fix away from performance management and towards maintenance scheduling, supply and cleaning cycle planning.
 
@@ -135,7 +150,7 @@ I analyse 200+ daily delivery stops in Excel, using pivot tables to break perfor
 
 **Data Analyst, Amdari** · Feb 2025 to present
 
-Applied analytics programme, project delivery. Project work on supplied industry datasets, each scoped to a business brief and delivered end to end. The three projects above were delivered through this programme.
+Applied analytics programme, project delivery. Project work on supplied industry datasets, each scoped to a business brief and delivered end to end. The four projects above were delivered through this programme.
 
 ---
 
