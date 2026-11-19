@@ -33,7 +33,7 @@ I also try to be clear about where the evidence stops. In a sales and order revi
 | **One flat table cannot be analysed** | Model it into a fact table and dimensions, checking every key for conflicting attributes before collapsing it |
 | **Nobody knows what is driving a number** | Break the metric down across dimensions until I can isolate what is driving it, then quantify what it costs |
 | **An assumption needs testing, not confirming** | Design the query so it can disprove the belief, then report what it actually shows |
-| **A difference looks real but might be noise** | Test whether a gap between groups is bigger than chance would produce, before anyone builds a policy on it |
+| **The biggest bar is not the biggest problem** | Compare rates across groups instead of counts, so the largest group does not get mistaken for the worst performing one |
 | **A comparison is not like for like** | Build rates instead of raw counts, so volume differences do not distort the ranking |
 | **A metric needs to be built, not just read** | Construct calculated measures at row level, including margin, cost and duration variance against plan |
 | **Size is being mistaken for risk** | Separate exposure from failure rate, because the biggest balance and the biggest problem are often different things |
@@ -99,9 +99,9 @@ Project based analytics on supplied industry datasets, each scoped to a business
 
 **Problem:** A bank holding 1,500 loans and $36.62M of lending could not tell in advance which loans would go bad. Its risk assessment was no longer keeping up, and the brief asked which borrower groups and loan types were driving the losses.
 
-**What I did:** Built the transformation layer in Power Query, banding age, income, credit score and loan amount so continuous values could be grouped, and writing a conditional column that counts interest only on loans still being paid. Built a date table in M. Then tested every borrower characteristic against the default outcome instead of reading the tallest bar as the answer.
+**What I did:** Built the transformation layer in Power Query, banding age, income, credit score and loan amount so continuous values could be grouped, and writing a conditional column that counts interest only on loans still being paid. Built a date table in M. Then worked out the default rate for every borrower group the bank records, instead of reading the tallest bar as the answer.
 
-**What it showed:** None of the characteristics the bank collects separate defaulters from repayers. Credit score averages 678.5 on defaulted loans against 682.7 on repaid ones, and it does not move the price either, correlating with interest rate at -0.012. The loss concentrates by size instead. Loans above $44k are 17.3% of the book and 40.1% of the $6.56M lost. A further $7.25M sits in arrears, more than has already been written off.
+**What it showed:** None of the characteristics the bank collects separate defaulters from repayers. Employed borrowers default at 16.88% and unemployed at 17.87%, and the credit score bands do not rise or fall in order, so the score is not tracking anything. The bank also charges roughly 6% across every score band, so it is not pricing for risk either. The loss concentrates by size instead. Loans above $44k are 17.3% of the book and 40.1% of the $6.56M lost. A further $7.25M sits in arrears, more than has already been written off.
 
 <br>
 
