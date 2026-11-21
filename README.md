@@ -35,7 +35,7 @@ I also try to be clear about where the evidence stops. In a sales and order revi
 | **An assumption needs testing, not confirming** | Design the query so it can disprove the belief, then report what it actually shows |
 | **The biggest bar is not the biggest problem** | Compare rates across groups instead of counts, so the largest group does not get mistaken for the worst performing one |
 | **A comparison is not like for like** | Build rates instead of raw counts, so volume differences do not distort the ranking |
-| **A metric needs to be built, not just read** | Construct calculated measures at row level, including margin, cost and duration variance against plan |
+| **A metric needs building, not reading** | Construct calculated measures at row level, including margin, cost and duration variance against plan |
 | **Size is being mistaken for risk** | Separate exposure from failure rate, because the biggest balance and the biggest problem are often different things |
 | **Stakeholders cannot read a spreadsheet** | Build interactive dashboards with filtering, so the same report answers several people's questions |
 | **The numbers need to be trusted** | Validate every figure against a control total before it goes anywhere |
@@ -67,6 +67,15 @@ I also try to be clear about where the evidence stops. In a sales and order revi
 | **Conditional formatting by measure** | Letting thresholds flag themselves as the data changes, instead of colouring by hand |
 | **Decomposition trees** | Drilling exposure through product, segment, geography and branch type in one visual |
 
+### Excel
+
+| Capability | Applied to |
+|---|---|
+| **Excel Tables and XLOOKUP** | Joining three tables on shared keys. Formulas name the column, not the cell, so they keep working when rows and columns are added |
+| **Finding breaks that throw no error** | IDs with a space inside them. The lookup fails quietly, records drop out of every breakdown, and the headline total still looks right |
+| **Pivot architecture** | Seven PivotTables on one shared cache, with slicers filtering the whole page from one click |
+| **Picking the right average** | Banding categories against the median, not the mean, because one big value drags an average and puts the rest in the wrong group |
+
 `SQL Server` `PostgreSQL` `Power BI` `Power Query` `DAX` `Excel` `Claude` `ChatGPT`
 
 ---
@@ -83,7 +92,7 @@ When the data can size a problem but not explain it, I say so. A guess that soun
 
 ## 📁 Analytics Projects
 
-Project based analytics on supplied industry datasets, each scoped to a business brief and delivered end to end. Full documentation, queries, DAX, dashboards and raw source data are published in each repository, so every figure below can be reproduced instead of taken on trust.
+Project based analytics on industry datasets, each scoped to a business brief and delivered end to end. Full documentation, queries, DAX, dashboards and raw source data are published in each repository, so every figure below can be reproduced instead of taken on trust.
 
 | Project | Tools | Focus |
 |---|---|---|
@@ -150,7 +159,7 @@ I analyse 200+ daily delivery stops in Excel, using pivot tables to break perfor
 
 **Data Analyst, Amdari** · Feb 2025 to present
 
-Applied analytics programme, project delivery. Project work on supplied industry datasets, each scoped to a business brief and delivered end to end. The four projects above were delivered through this programme.
+Applied analytics programme, project delivery. Project work on industry datasets, each scoped to a business brief and delivered end to end. The four projects above were delivered through this programme.
 
 ---
 
