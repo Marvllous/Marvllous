@@ -71,12 +71,12 @@ I also try to be clear about where the evidence stops. In a sales and order revi
 
 | Capability | Applied to |
 |---|---|
-| **Excel Tables and XLOOKUP** | Joining three tables on shared keys. Formulas name the column, not the cell, so they keep working when rows and columns are added |
+| **Excel Tables and XLOOKUP** | Joined tables on shared keys. Formulas name the column, not the cell, so they keep working when rows and columns are added |
 | **Finding breaks that throw no error** | IDs with a space inside them. The lookup fails quietly, records drop out of every breakdown, and the headline total still looks right |
 | **Pivot architecture** | Seven PivotTables on one shared cache, with slicers filtering the whole page from one click |
 | **Picking the right average** | Banding categories against the median, not the mean, because one big value drags an average and puts the rest in the wrong group |
 
-`SQL Server` `PostgreSQL` `Power BI` `Power Query` `DAX` `Excel` `Claude` `ChatGPT`
+`SQL Server` `PostgreSQL` `Power BI` `Power Query` `DAX` `Excel` `Claude`
 
 ---
 
