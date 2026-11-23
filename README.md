@@ -92,7 +92,7 @@ When the data can size a problem but not explain it, I say so. A guess that soun
 
 ## 📁 Analytics Projects
 
-Project based analytics on industry datasets, each scoped to a business brief and delivered end to end. Full documentation, queries, DAX, dashboards and raw source data are published in each repository, so every figure below can be reproduced instead of taken on trust.
+Project based analytics on industry datasets, each scoped to a business brief and delivered end to end. Full documentation, queries, DAX, dashboards and raw source data are published in each repository, so every figure below can be reproduced from source.
 
 | Project | Tools | Focus |
 |---|---|---|
