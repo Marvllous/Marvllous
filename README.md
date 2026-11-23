@@ -151,11 +151,13 @@ Project based analytics on industry datasets, each scoped to a business brief an
 
 **Logistics Operations Associate, JD.com** · Jul 2025 to present
 
-I build and maintain the daily, weekly and monthly operational reporting for a delivery station, covering fulfilment rate, pickup rate, route efficiency and complaint data. The station reached a 99.6% fulfilment rate, ranking Top 5 in Europe, and a 100% pickup rate that took the No. 1 position EU-wide.
+Drivers were working from stop lists with no geographic logic, crossing and re-crossing the same patch all day. I exported the route data and used pivot tables to group 200+ daily stops into postcode clusters, balancing route size against distance so each driver covered one contiguous area. Routes that used to finish between 13:00 and 15:00 now finish around midday, on the same daily volume, against a 15:00 cutoff.
 
-I am the escalation point for delivery exceptions at the station. Cases come in through the day and we respond inside 30 minutes. Customer service refers one over and I take it from both ends, the driver on the round and the customer on the phone. Address resolution failures, non-receipt claims. The same cases turn up in the complaint data I analyse, so I am not reading a report about something I did not see.
+I build and maintain the daily, weekly and monthly reporting that station and regional management read each morning, covering fulfilment, pickup, route performance and complaints. It supported a 99.6% fulfilment rate that ranked the station Top 5 across the EU network, and a 100% pickup rate that took the No. 1 position.
 
-I analyse 200+ daily delivery stops in Excel, using pivot tables to break performance down by route and by driver. Root cause analysis on the complaint data led to corrective actions that ranked the station Top 10 across the EU on that measure.
+I am also the escalation point for delivery exceptions. Cases come in through the day and we respond inside 30 minutes. Customer service refers one over and I take it from both ends, the driver on the round and the customer on the phone. Address resolution failures, non-receipt claims. The same cases turn up in the complaint data I analyse, so I am not reading a report about something I did not see.
+
+Root cause analysis on that complaint data led to corrective actions that ranked the station Top 10 in the EU on that measure. I also provided the operational analysis behind a pilot third delivery wave, a 19:00 round added on top of the morning and afternoon waves. Ours was the first station in the EU network to run it.
 
 **Data Analyst, Amdari** · Feb 2025 to present
 
