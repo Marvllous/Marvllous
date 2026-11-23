@@ -110,7 +110,7 @@ Project based analytics on industry datasets, each scoped to a business brief an
 
 **What I did:** Built the transformation layer in Power Query, banding age, income, credit score and loan amount so continuous values could be grouped, and writing a conditional column that counts interest only on loans still being paid. Built a date table in M. Then worked out the default rate for every borrower group the bank records, instead of reading the tallest bar as the answer.
 
-**What it showed:** None of the characteristics the bank collects separate defaulters from repayers. Employed borrowers default at 16.88% and unemployed at 17.87%, and the credit score bands do not rise or fall in order, so the score is not tracking anything. The bank also charges roughly 6% across every score band, so it is not pricing for risk either. The loss concentrates by size instead. Loans above $44k are 17.3% of the book and 40.1% of the $6.56M lost. A further $7.25M sits in arrears, more than has already been written off.
+**What it showed:** None of the characteristics that the bank collects separate defaulters from repayers. Employed borrowers default at 16.88% and unemployed at 17.87%, and the credit score bands do not rise or fall in order, so the score is not tracking anything. The bank also charges roughly 6% across every score band, so it is not pricing for risk either. The loss concentrates by size instead. Loans above $44k are 17.3% of the book and 40.1% of the $6.56M lost. A further $7.25M sits in arrears, more than has already been written off.
 
 <br>
 
