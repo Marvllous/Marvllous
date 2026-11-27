@@ -151,13 +151,41 @@ Project based analytics on industry datasets, each scoped to a business brief an
 
 **Logistics Operations Associate, JD.com** · Jul 2025 to present
 
-Route finish times were landing between 13:00 and 15:00 against a 15:00 cutoff, so I looked at whether the stop order could be grouped more tightly. I exported the route data and used pivot tables to cluster 200+ daily stops by postcode, balancing route size against distance so each driver covers one contiguous area. Finish times moved to around midday on the same daily volume.
+Run the daily operation of a last mile delivery station handling peaks above
+600 parcels a day, from round allocation and dispatch for 8 to 10 drivers
+through to the daily, weekly and monthly reporting read each morning by station
+management, the regional head and other departments across the EU logistics
+network. The station holds a 99.6% fulfilment rate at Top 5 in the network and
+a 100% returns pickup rate at the No. 1 position.
 
-I build and maintain the daily, weekly and monthly reporting that station and regional management read each morning, covering fulfilment, pickup, route performance and complaints. It supported a 99.6% fulfilment rate that ranked the station Top 5 across the EU network, and a 100% pickup rate that took the No. 1 position.
+Surface driver performance gaps early enough to act on them, by querying the
+station's retained delivery history in SQL to answer questions the standard
+reporting does not cover: how a named driver has performed month on month and
+year on year, pickups missed against pickups completed, and which customer
+complaints attach to them. The answer goes to my manager as a written report,
+or as an Excel or Power BI dashboard where it needs one.
 
-I am also the escalation point for delivery exceptions. Cases come in through the day and we respond inside 30 minutes. Customer service refers one over and I take it from both ends, the driver on the round and the customer on the phone. Address resolution failures, non-receipt claims. The same cases turn up in the complaint data I analyse, so I am not reading a report about something I did not see.
+Took daily round finish times from between 13:00 and 15:00 to around midday
+against a 15:00 cutoff on unchanged volume, by exporting the delivery manifest
+and rebuilding the allocation in pivot tables, clustering 200+ daily stops by
+recipient postcode and balancing round size against distance. The method is
+still how the station allocates.
 
-Root cause analysis on that complaint data led to corrective actions that ranked the station Top 10 in the EU on that measure. I also provided the operational analysis behind a pilot third delivery wave, a 19:00 round added on top of the morning and afternoon waves. Ours was the first station in the EU network to run it.
+Close 20 to 25 escalated exception cases a week on documented evidence rather
+than judgement, taking each case from both the driver on the round and the
+customer directly, and verifying the coordinates recorded on the proof of
+delivery against the customer's registered address and the door location in
+Google Maps to separate a genuine misdelivery from a false claim.
+
+Moved the station to Top 10 across the EU network on customer experience, by
+working the complaint records as a dataset instead of a queue, isolating the
+recurring causes behind them and putting corrective actions against those
+causes rather than closing cases one at a time.
+
+Put the EU network's first third delivery wave into operation, building the
+case from the station's own volume and capacity data for a 19:00 round on top
+of the existing morning and afternoon waves, and tracking performance against
+that case once it was live.
 
 **Data Analyst, Amdari** · Feb 2025 to present
 
