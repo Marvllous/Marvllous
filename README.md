@@ -89,7 +89,7 @@ When the data can size a problem but not explain it, I say so. A guess that soun
 
 **Logistics Operations Associate, JD.com** · Jul 2025 to present
 
-Run the daily operation of a last mile delivery station handling peaks above 600 parcels a day, from round allocation and dispatch for 8 to 10 drivers through to the daily, weekly and monthly reporting read each morning by station management, the regional head and other departments across the EU logistics network. The station holds a 99.6% fulfilment rate at Top 5 in the network and a 100% returns pickup rate at the No. 1 position.
+Run the daily operation of a last mile delivery station handling peaks over 1,000 parcels a day, from round allocation and dispatch for 8 to 10 drivers through to the daily, weekly and monthly reporting read each morning by station management, the regional head and other departments across the EU logistics network. The station holds a 99.6% fulfilment rate at Top 5 in the network and a 100% returns pickup rate at the No. 1 position.
 
 Surface driver performance gaps early enough to act on them, by querying the station's retained delivery history in SQL to answer questions the standard reporting does not cover: how a named driver has performed month on month and year on year, pickups missed against pickups completed, and which customer complaints attach to them. The answer goes to my manager as a written report, or as an Excel or Power BI dashboard where it needs one.
 
